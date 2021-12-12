@@ -28,7 +28,7 @@ plt.plot([min(data[:, 0]), max(data[:, 0])], [perceptron.x2(min(data[:, 0])), pe
 
 # Logistic Regression
 time_start = time.time()
-regression = RegressionModel(0.1, 1000000)
+regression = RegressionModel(0.1, 10000)
 regression.train(data, target)
 times.append(time.time() - time_start)
 print("Logistic Regression", regression.W[0, 0], regression.W[1, 0], regression.W[2, 0])
